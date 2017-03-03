@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+ignore/
+*.csv
+*.png
+*.bak
+npm-debug.log
+bak
+myTestObject.js

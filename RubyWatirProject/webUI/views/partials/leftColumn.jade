@@ -1,0 +1,70 @@
+.backlog-stories.col-md-6
+	h3 Casper Config	
+	.form-group
+		form.configure-casper
+			.row
+				.input-group(style="margin-left: 30px")
+					.row
+						label Server:
+						input.form-control.casperConfig(id="serverName" name="serverName" type="text")
+					.row
+						label User:
+						input.form-control.casperConfig(id="userName" name="userName" type="text")
+					.row
+						label Password:
+						input.form-control.casperConfig(id="password" name="password" type="password")
+					.row
+						.input-group-btn
+							p
+							button.btn.btn-default.dropdown-toggle(id="newStep" data-toggle="dropdown") 
+								span.glyphicon.glyphicon-plus
+								|  Step
+							ul.dropdown-menu(id="casperAction" role="menu")
+								li.ddl-hover(onclick="showNavigateTo()") Navigate To
+						.input-group-btn
+							p
+							button.btn.btn-default.dropdown-toggle.disabled(id="pageSelection" data-toggle="dropdown" style="margin-left: 5px")
+								| Page Selection
+							ul.dropdown-menu(id="casperBrowse" role="menu")
+								li.ddl-hover(onclick="loadFieldList('backlogPageElements')") Backlog
+								//- li.ddl-hover(onclick="loadFieldList('userStoriesPageElements')") User Stories
+								//- li.ddl-hover(onclick="loadFieldList('pIPageElements')") PI Items
+						.input-group-btn
+							p
+							button.btn.btn-default.dropdown-toggle.disabled(id="fieldSelection" data-toggle="dropdown" style="margin-left: 5px")
+								| Element Selection
+							ul.dropdown-menu(id="casperField" role="menu")
+						.input-group-btn
+							p
+							button.btn.btn-default.dropdown-toggle.disabled(id="action" data-toggle="dropdown" style="margin-left: 5px")
+								| Action
+							ul.dropdown-menu.disabled(id="actionList" role="menu")
+						.input-group-btn
+							p
+							button.btn.btn-default(id="createTheObject" style="margin-left: 5px")
+								| Create Object
+						.input-group-btn
+							p
+							button.btn.btn-default(id="runTheCasper" style="margin-left: 5px")
+								| Run Casper
+					.row
+						p
+						.results(style="font-family: Courier; color: #00FF00; background: #000000; border: 3px double #CCCCCC; padding: 10px")
+.currentObject.col-md-6
+	h3 Current Object
+	p
+		| Hello this is a paragraph of text
+		| that i Kind of expect to show up below 
+		| the current object div.
+	p
+		| Hello this is a paragraph of text
+		| that i Kind of expect to show up below 
+		| the current object div.
+	p
+		| Hello this is a paragraph of text
+		| that i Kind of expect to show up below 
+		| the current object div.
+	p
+		| Hello this is a paragraph of text
+		| that i Kind of expect to show up below 
+		| the current object div.

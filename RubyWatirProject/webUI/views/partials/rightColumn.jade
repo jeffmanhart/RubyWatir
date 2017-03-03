@@ -1,0 +1,28 @@
+.database-insert.col-md-6(style="margin-left: 15px")
+	h3 Database Stuffs
+	.form-group
+		form.add-to-database
+			.row
+				.input-group
+					.input-group-btn
+						button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Collection 
+							span.caret
+						ul.dropdown-menu(id="collectionDropdown" role="menu")
+					input.form-control(id="collectionTextBox" name="collection" type="text")
+			.row
+				label Actor:
+				input.form-control(name="actor" type="text")
+			.row
+				label Data:
+				input.form-control(name="data" type="text")
+			.row
+				label Tags:
+				input.form-control(name="tags" type="text")
+			.row
+				p
+				button.btn.btn-success(id="grab-data" type="button") Grab data!
+				button.btn.btn-primary(id="create-data" type="button" style="margin-left: 10px") Create data
+			p
+.row
+.col-md-6
+	.db-results(style="font-family: Courier; color: #00FF00; background: #000000; border: 3px double #CCCCCC; padding: 10px")

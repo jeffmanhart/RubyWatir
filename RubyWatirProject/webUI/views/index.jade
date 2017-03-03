@@ -1,0 +1,15 @@
+html
+  head
+    title Casper Stuffs
+    include partials/head
+  body
+    ul.nav.nav-tabs
+      li.active
+        a(data-toggle="tab" href="#casper") Casper 
+      li
+        a(data-toggle="tab" href="#mongo") Mongo
+    div.tab-content
+      div.tab-pane.active(id="casper")
+        include partials/leftColumn
+      div.tab-pane(id="mongo")
+        include partials/rightColumn
